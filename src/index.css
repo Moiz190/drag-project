@@ -1,0 +1,79 @@
+* {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+.page-container {
+  min-height: 100vh;
+}
+.pt-1 {
+  padding-top: 0.5rem;
+}
+.box {
+  position: fixed;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  cursor: grabbing;
+  align-items: center;
+  width: 15rem;
+  background-color: #e3e2e2;
+  padding: 0.5rem;
+  box-shadow: 0px 0px 20px rgba(71, 71, 71, 0.3);
+  border-radius: 5px;
+}
+.absolute {
+  position: absolute;
+}
+.relative {
+  position: relative;
+}
+.bg-white {
+  background-color: #fff;
+}
+.boxTitle {
+  top: 0;
+  left: 0;
+  font-size: 0.8rem;
+  display: flex;
+  gap: 0.5rem;
+}
+.boxChildContainer {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.boxChild > .boxChildIcon,
+.boxIcon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.boxIcon{
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.boxChildIcon::before {
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  content: "";
+  height: 35px;
+  width: 40px;
+  background-color: white;
+}
+.boxChild > .boxChildName {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 95%;
+  white-space: nowrap;
+}
+.boxLabel {
+  width: 2rem;
+  height: 2rem;
+  border-bottom-right-radius: 6px;
+  background: #30c130;
+}
+svg {
+  height: 100vh;
+  width: 100vw;
+}
