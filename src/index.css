@@ -37,6 +37,7 @@
   font-size: 0.8rem;
   display: flex;
   gap: 0.5rem;
+  font-weight: 600;
 }
 .boxChildContainer {
   display: flex;
